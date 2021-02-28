@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width =device-width, initial-scale=1">
     <title>Color - Sauvage</title>
-    <link href="css/color.css" rel="stylesheet">
+    <link href="color.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
 <body>
   <!-- partie head-->
     <section id="bann">
-        <img src="ressources/image/log.png" class="logo">
+        <img src="log.png" class="logo">
         <div class="text_bann">
           <h2>Color switcher</h2>
           <div class="click_bann">
-            <a href="acceuil.html"><span></span>Acceuil</a> 
+            <a href="index.html"><span></span>Acceuil</a> 
         </div>
         </div>
         </section>
@@ -22,7 +22,7 @@
        <!-- barre de navigation-->
       <nav>
         <ul>
-          <li><a href="acceuil.html">Acceuil</a></li>
+          <li><a href="index.html">Acceuil</a></li>
           <li><a href="">Animaux</a>
             <ul class="sous_menu">
               <li><a href="lion.html">Lion</a></li>
@@ -32,13 +32,13 @@
               </ul></li>
           <li><a href="galerie.html" id="lien">Galerie</a></li>
           <li><a href="color.html">Color switcher</a></li>
-          <li><a href="tp003/tp003.html">Cartographie de la France TP003</a></li>
+          
           <li><a href="Contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
     <div id="Menu_icon">
-      <img src="ressources/image/menu.png" alt="menu" id="menu">
+      <img src="menu.png" alt="menu" id="menu">
     </div>
       <!-- boutton switch -->
        <button>Switch color</button>
@@ -81,11 +81,11 @@
       Menu_icon.onclick = function(){
       if(side_barre.style.right == "-250px") {
         side_barre.style.right = "0";
-        menu.src = "ressources/image/x.png";
+        menu.src = "x.png";
       }
       else{
         side_barre.style.right = "-250px";
-        menu.src = "ressources/image/menu.png";
+        menu.src = "menu.png";
       }
       }
       //fonction Dom changement de couleur style background 
