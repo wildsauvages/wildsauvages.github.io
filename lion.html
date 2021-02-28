@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width =device-width, initial-scale=1">
     <title>Lion - Sauvage</title>
-    <link href="css/lion.css" rel="stylesheet">
+    <link href="lion.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
     <section id="bann">
-        <img src="ressources/image/log.png" class="logo">
+        <img src="log.png" class="logo">
         <div class="text_bann">
           <h1>LION</h1>
           <P>Le roi de la jungle </P>
@@ -21,7 +21,7 @@
     <div id="side_barre">
       <nav>
         <ul>
-          <li><a href="acceuil.html">Acceuil</a></li>
+          <li><a href="index.html">Acceuil</a></li>
           <li><a href="">Animaux</a>
           <ul class="sous_menu">
           <li><a href="lion.html">Lion</a></li>
@@ -31,13 +31,13 @@
           </ul></li>
           <li><a href="galerie.html" id="lien">Galerie</a></li>
           <li><a href="color.html">Color switcher</a></li>
-          <li><a href="tp003/tp003.html">Cartographie de la France TP003</a></li>
+          
           <li><a href="Contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
     <div id="Menu_icon">
-      <img src="ressources/image/menu.png" alt="menu" id="menu">
+      <img src="menu.png" alt="menu" id="menu">
     </div>
     <!--Discover-->
     <section id="Discover">
@@ -81,7 +81,7 @@
           <h4 style="color: #0c3b37;">Habitat</h4>
           <p>La répartition du lion (historique en rouge, actuelle en bleu).
           Son habitat naturel se situe actuellement en Afrique et dans une petite partie de l'ouest de l'Inde. Il a besoin d'un grand espace et vit dans des savanes et dans des forêts sèches.</p>
-          <a href="ressources/image/Lion_distribution.png" target="_blank"><img src="ressources/image/Lion_distribution.png" alt="Repartition des lions" ></a>
+          <a href="Lion_distribution.png" target="_blank"><img src="Lion_distribution.png" alt="Repartition des lions" ></a>
           <!-- partie taille et poids -->
           <h4 style="color: #0c3b37;">Taille et poids</h4> 
           <p> Les adultes mesurent jusqu'à deux mètres de longueur, ont 7 vertèbres, et pèsent de 100 à 150 kilogrammes pour les lionnes contre 150 à 250 kg pour les lions. C'est à la maturité (vers l'age de 7 ans), que les mâles prennent plus de poids. Ils sont alors plus forts que les autres et arborent une crinière plus volumineuse, qui fonce avec l'âge.</p>
@@ -93,7 +93,7 @@
           <p>Les lions communiquent entre eux par des gémissements, des grognements, des miaulements et des rugissements.Lorsqu'un lion étranger au groupe s'approche, un combat s'engage (parfois jusqu'à la mort) entre le chef de la tribu et l'intrus. S'il gagne, le dominant reste dans le groupe. Si l'étranger gagne et que des lionceaux sont présents au sein du groupe, le nouveau venu les tuera pour assurer sa reproduction.</p>
           <!-- panel audio -->
           <audio controls>
-          <source src="ressources/son/rug_lion.mp3" type="audio/mpeg">
+          <source src="rug_lion.mp3" type="audio/mpeg">
           Your browser does not support the audio tag.
           </audio>
           <!-- partie nutrition -->
@@ -111,17 +111,17 @@
       <div class="slideshow-container">
         <div class="mySlides fade">
           <div class="numerotext">1 / 3</div>
-          <img src="ressources/image/s1.jpg" style="width:100%">
+          <img src="s1.jpg" style="width:100%">
           <div class="text">Les regards d'un roi</div>
         </div>
         <div class="mySlides fade">
           <div class="numerotext">2 / 3</div>
-          <img src="ressources/image/s2.jpg" style="width:100%">
+          <img src="s2.jpg" style="width:100%">
           <div class="text">La puissance du sauvage</div>
         </div>
         <div class="mySlides fade">
           <div class="numerotext">3 / 3</div>
-          <img src="ressources/image/s4.jpg" style="width:100%">
+          <img src="s4.jpg" style="width:100%">
           <div class="text">Le passé, le présent et le future </div>
         </div>
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -172,11 +172,11 @@
       Menu_icon.onclick = function(){
       if(side_barre.style.right == "-250px") {
         side_barre.style.right = "0";
-        menu.src = "ressources/image/x.png";
+        menu.src = "x.png";
       }
       else{
         side_barre.style.right = "-250px";
-        menu.src = "ressources/image/menu.png";
+        menu.src = "menu.png";
       }
       }
       // partie slide image js
