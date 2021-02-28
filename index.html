@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width =device-width, initial-scale=1">
     <title>Acceuil - Sauvage</title>
-    <link href="css/home.css" rel="stylesheet">
+    <link href="home.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     
 </head>
 <body>
     <!-- Partie banniere header -->
     <section id="bann">
-        <img src="ressources/image/log.png" class="logo">
+        <img src="log.png" class="logo">
         <div class="text_bann">
           <h1>Sauvage</h1>
           <P>Bonjour <span></span> et bienvenue sur Sauvage</P>
@@ -26,7 +26,7 @@
     <div id="side_barre">
       <nav>
         <ul>
-          <li><a href="acceuil.html">Acceuil</a></li>
+          <li><a href="index.html">Acceuil</a></li>
           <li><a href="">Animaux</a>
           <ul class="sous_menu">
           <li><a href="lion.html">Lion</a></li>
@@ -36,18 +36,17 @@
           </ul></li>
           <li><a  href="Galerie.html" onclick="alert('Page non accessible pour des raisons de maintenance!'); return false;" >Galerie</a></li>
           <li><a href="color.html">Color switcher</a></li>
-          <li><a href="tp003/tp003.html">Cartographie de la France TP003</a></li>
           <li><a href="Contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
     <div id="Menu_icon">
-      <img src="ressources/image/menu.png" alt="menu" id="menu">
+      <img src="menu.png" alt="menu" id="menu">
     </div>
     <!-- partie VIDEO-->
     <section id="video_sauvage">
       <div class="titre_video">
-        <img src="ressources/image/vid.png" alt="logo_icon_video">
+        <img src="vid.png" alt="logo_icon_video">
         <p>Trailer</p>
         <h1>La beauté de la nature</h1>
       </div>
@@ -61,13 +60,13 @@
     <!-- partie lire plus -->
     <section id="read_more">
       <div class="àpropos">
-        <img src="ressources/image/INFO.png" alt="logo_icon_video">
+        <img src="INFO.png" alt="logo_icon_video">
         <p>Lire plus</p>
         <h1>Animaux sauvages</h1>
       </div>
       <div class="animal_box" id="read_more">
         <div class="anim_box">
-          <img src="ressources/image/lion.jpg" alt="un lion">
+          <img src="lion.jpg" alt="un lion">
           <div class="overlay"></div>
           <div class="textdesc">
            <h3><a href="lion.html">LION</a></h3>
@@ -77,7 +76,7 @@
           </div>
         </div>
         <div class="anim_box">
-          <img src="ressources/image/deer.jpg" alt="un">
+          <img src="deer.jpg" alt="un">
           <div class="overlay_soon"></div>
           <div class="textdesc">
             <h3> <a href="deer.html">CERF</a></h3>
@@ -86,7 +85,7 @@
           </div>
         </div>
         <div class="anim_box">
-          <img src="ressources/image/wolfy.jpg" alt=" un loup">
+          <img src="wolfy.jpg" alt=" un loup">
           <div class="overlay_soon"></div>
           <div class="textdesc">
             <h3><a href="Loup.html">LOUP</a></h3>
@@ -95,7 +94,7 @@
           </div>
         </div>
         <div class="anim_box">
-          <img src="ressources/image/zebre.jpg" alt="une zebre">
+          <img src="zebre.jpg" alt="une zebre">
           <div class="overlay_soon"></div>
           <div class="textdesc">
             <h3><a href="Zebre.html">ZEBRE</a></h3>
@@ -153,11 +152,11 @@
       Menu_icon.onclick = function(){
       if(side_barre.style.right == "-250px") {
         side_barre.style.right = "0";
-        menu.src = "ressources/image/x.png";
+        menu.src = "x.png";
       }
       else{
         side_barre.style.right = "-250px";
-        menu.src = "ressources/image/menu.png";
+        menu.src = "menu.png";
       }
       }
     </script>
