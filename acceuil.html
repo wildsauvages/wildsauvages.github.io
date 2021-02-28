@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width =device-width, initial-scale=1">
+    <title>Acceuil - Sauvage</title>
+    <link href="css/home.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Partie banniere header -->
+    <section id="bann">
+        <img src="ressources/image/log.png" class="logo">
+        <div class="text_bann">
+          <h1>Sauvage</h1>
+          <P>Bonjour <span></span> et bienvenue sur Sauvage</P>
+          <!-- les deux bouttons -->
+          <div class="click_bann">
+            <a href="#trailer"><span></span>Trailer</a>
+            <a href="#read_more"><span></span>Lire plus</a>
+          </div>
+        </div>
+    </section>
+    <!-- partie side barre -->
+    <div id="side_barre">
+      <nav>
+        <ul>
+          <li><a href="acceuil.html">Acceuil</a></li>
+          <li><a href="">Animaux</a>
+          <ul class="sous_menu">
+          <li><a href="lion.html">Lion</a></li>
+          <li><a href="deer.html">Cerf</a></li>
+          <li><a href="Loup.html">Loup</a></li>
+          <li><a href="Zebre.html">Zebre</a></li>
+          </ul></li>
+          <li><a  href="Galerie.html" onclick="alert('Page non accessible pour des raisons de maintenance!'); return false;" >Galerie</a></li>
+          <li><a href="color.html">Color switcher</a></li>
+          <li><a href="tp003/tp003.html">Cartographie de la France TP003</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="Menu_icon">
+      <img src="ressources/image/menu.png" alt="menu" id="menu">
+    </div>
+    <!-- partie VIDEO-->
+    <section id="video_sauvage">
+      <div class="titre_video">
+        <img src="ressources/image/vid.png" alt="logo_icon_video">
+        <p>Trailer</p>
+        <h1>La beauté de la nature</h1>
+      </div>
+      <div class="video">
+        <video id="trailer" controls="controls" poster="ressources/image/Capture.jpg">
+          <source src="ressources/videos/WILD.mp4">
+          <source src="ressources/videos/WILD.ogg">
+        </video>
+      </div>
+    </section>
+    <!-- partie lire plus -->
+    <section id="read_more">
+      <div class="àpropos">
+        <img src="ressources/image/INFO.png" alt="logo_icon_video">
+        <p>Lire plus</p>
+        <h1>Animaux sauvages</h1>
+      </div>
+      <div class="animal_box" id="read_more">
+        <div class="anim_box">
+          <img src="ressources/image/lion.jpg" alt="un lion">
+          <div class="overlay"></div>
+          <div class="textdesc">
+           <h3><a href="lion.html">LION</a></h3>
+            <hr>
+            <p>Force, affirmation de soi et Courage: c'est le roi de la jungle  </p>
+            <a href="lion.html">Découvrir</a>
+          </div>
+        </div>
+        <div class="anim_box">
+          <img src="ressources/image/deer.jpg" alt="un">
+          <div class="overlay_soon"></div>
+          <div class="textdesc">
+            <h3> <a href="deer.html">CERF</a></h3>
+            <hr>
+            <p>Prochainement...</p>
+          </div>
+        </div>
+        <div class="anim_box">
+          <img src="ressources/image/wolfy.jpg" alt=" un loup">
+          <div class="overlay_soon"></div>
+          <div class="textdesc">
+            <h3><a href="Loup.html">LOUP</a></h3>
+            <hr>
+            <p>Prochainement...</p>
+          </div>
+        </div>
+        <div class="anim_box">
+          <img src="ressources/image/zebre.jpg" alt="une zebre">
+          <div class="overlay_soon"></div>
+          <div class="textdesc">
+            <h3><a href="Zebre.html">ZEBRE</a></h3>
+            <hr>
+            <p>Prochainement...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Partie footer et reseau sociaux-->
+    <section id="footer">
+      <div class="footer-row">
+      <div class="footer-left">
+       <h1>A propos de nous</h1>
+       <p>Nous sommes une organisation fictive à but non lucratif <br>qui a pour objectif d'éveiller la conscience générale <br>
+        sur la nature en vue de protéger la faune. </p>
+      </div>
+      <div class="footer-right">
+        <h1>Entrer en contact</h1>
+        <p>55, place concorde, Paris<i class="fa fa-map-marker"></i></p>
+        <p>Sauvage@gmail.com<i class="fa fa-paper-plane"></i></p>
+        <p>+03 6 54 54 84 54<i class="fa fa-phone"></i></p>
+      </div>
+      </div>
+      <div class="social_media">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-youtube-play"></i>
+      <p>© 2020 Abdelali Amadiaze</p>
+      </div>
+    </section>
+    <!-- Partie js-->
+    <script>
+      //partie localStorage
+      window.onload = () => {
+        if(localStorage.prenom != null){
+          var prenom = localStorage.prenom
+        }else{ var prenom = prompt("Entrer votre prénom")
+          localStorage.prenom = prenom
+        }
+        if(localStorage.nom != null){
+          var nom = localStorage.nom
+        }else{
+          var nom = prompt("Entrer votre nom")
+          localStorage.nom = nom
+        }
+        document.querySelector("span").innerText = prenom ;
+      }
+      //partie menu deroulant de droite
+      var Menu_icon = document.getElementById("Menu_icon")
+      var side_barre = document.getElementById("side_barre")
+      var menu = document.getElementById("menu")
+      side_barre.style.right = "-250px";
+      Menu_icon.onclick = function(){
+      if(side_barre.style.right == "-250px") {
+        side_barre.style.right = "0";
+        menu.src = "ressources/image/x.png";
+      }
+      else{
+        side_barre.style.right = "-250px";
+        menu.src = "ressources/image/menu.png";
+      }
+      }
+    </script>
+</body>
+</html>

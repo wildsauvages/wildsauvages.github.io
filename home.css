@@ -1,0 +1,389 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: baloo;
+}
+@font-face{
+  font-family :baloo;
+  src:url('../font/Baloo.ttf') format('truetype');
+}
+/* banniere principale 'head' */
+#bann{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.335),rgba(0,0,0,0.335)),url(../ressources/image/p41.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  box-shadow: inset;
+}
+.logo{
+  width: 90px;
+  left: 4%;
+  top: 4%;
+  position: absolute;
+}
+.text_bann{
+  text-align: center;
+  padding-top: 180px;
+  color: #fff;
+}
+.text_bann h1{
+  font-size: 130px;
+}
+.text_bann p{
+  font-size: 20PX;
+  font-style: italic;
+}
+/* --- boutton trailer et lire plus --- */
+.click_bann{
+  margin: 70px auto 0;
+}
+.click_bann a{
+  text-decoration: none;
+  display: inline-block;
+  font-size: 23px;
+  width: 150px;
+  margin: 0 10px;
+  padding: 12px 0;
+  border: 4px solid #0c3b37;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  transition: color 0.5s;
+
+}
+.click_bann a span{
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #0c3b37;
+  z-index: -1;
+  transition: 0.5s;
+}
+.click_bann a:hover span{
+  width: 100%;
+}
+.click_bann a:hover {
+  color: #fff;
+}
+/* barre de navigation verticale */
+#side_barre{
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  right: -250px;
+  top: 0;
+  background: #0c3b37;
+  z-index: 2;
+  transition: 0.5s;
+}
+nav ul li{
+  list-style: none;
+  margin: 50px 20px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+.sous_menu{
+  display:none;
+}
+.sous_menu li{
+  color: #fff;
+}
+li:hover .sous_menu{
+  display:block;  
+}
+#Menu_icon{
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  position: fixed;
+  top: 20px;
+  right: 50px;
+  border-radius: 3px;
+  z-index: 3;
+  cursor: pointer;
+}
+#Menu_icon img{
+  width: 30px;
+  margin-top: 20px;
+}
+/* --- Partie responsive header bann --- */
+@media screen and (max-width: 1000px){
+  .text_bann h1{
+    font-size: 60px;
+  }
+  .text_bann p{
+    font-size: 10PX;
+    font-style: italic;
+  }
+  .logo{
+    width: 70px;
+    left: 3%;
+    top: 3%;
+    position: absolute;
+  }
+  .click_bann{
+    margin: 70px auto 0;
+  }
+  .click_bann a{
+    text-decoration: none;
+    display: block;
+    width: 110px;
+    margin: 20px auto;
+  }
+  #Menu_icon{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#bann{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.335),rgba(0,0,0,0.335)),url(../ressources/image/p411.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+}
+/* section partie trailer */
+#video_sauvage{
+  padding: 70px 0;
+  width: 100%;
+  background-color: rgb(218, 218, 218) ;
+}
+.titre_video img{
+  color: #0c3b37;
+  width: 50px;
+  height: 50px;
+}
+.titre_video{
+  text-align: center;
+  padding-bottom: 70px;
+}
+.titre_video p{
+  margin: auto;
+  font-size: 30px;
+  color: #0c3b37;
+  font-weight: bolder;
+}
+.titre_video h1{
+  font-size: 60px;
+}
+video{
+  margin-left: 170px;
+  height: 500px;
+  width: 1000px;
+}
+/* --- partie responsive section video "trailer" --- */
+@media screen and (max-width:1000px){
+  video{
+    margin-left: 0px;
+    height: 200px;
+    width: 363px;
+    margin-right: 0px;
+  }
+  .titre_video p{
+    margin: auto;
+    font-size: 25px;
+    
+  }
+  .titre_video h1{
+    font-size: 45px;
+  }
+}
+/* section Lire plus */
+#read_more{
+  padding: 70px 0;
+  width: 100%;
+  background-color:  rgb(128, 128, 128);
+}
+.àpropos{
+  text-align: center;
+  padding-bottom: 70px;
+}
+.àpropos p{
+  margin: auto;
+  font-size: 30px;
+  color: #0c3b37;
+  font-weight: bolder;
+}
+.àpropos h1{
+  font-size: 60px;
+}
+.àpropos img{
+  color: #0c3b37;
+  width: 50px;
+  height: 50px;
+}
+.animal_box{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+.anim_box{
+  color: #fff; 
+  text-align: center;
+  flex-basis: 48%;
+  border-radius: 8px;
+  margin-bottom:20px;
+  position: relative;
+}
+.anim_box img{
+  width: 100%;
+  border-radius: 7px; 
+}
+.overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-radius: 7px;
+  cursor: pointer;
+  background: linear-gradient(rgba(0,0,0,0.5),#0c3b37);
+  transition: 1s;
+  opacity: 0;
+}
+.overlay_soon{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-radius: 7px;
+  cursor: pointer;
+  background: linear-gradient(rgba(0,0,0,0.5),#4b4b4b);
+  transition: 1s;
+  opacity: 0;
+}
+.anim_box:hover .overlay{
+  opacity: 1;
+}
+.anim_box:hover .overlay_soon{
+  opacity: 1;
+}
+.anim_box:hover .textdesc{
+  opacity: 1;
+  bottom: 40%;
+}
+.textdesc{
+  position: absolute;
+  opacity: 0;
+  transition: 1s;
+  bottom: 0;
+  left: 50%;
+  width: 80%;
+  transform: translateX(-50%);
+}
+hr{
+  background: #fff;
+  width: 60%;
+  height: 2px;
+  border: 0;
+  margin: 15px auto;
+}
+.textdesc p{
+  font-size: 14px;
+}
+.textdesc h3{
+  font-size: 30px;
+}
+.textdesc a{
+  color: #fff;
+}
+.textdesc h3 a {
+  text-decoration: none;
+}
+/* --- Partie reponsive lire plus --- */
+@media screen and (max-width: 1000px){
+  .àpropos p{
+    margin: auto;
+    font-size: 25px; 
+  }
+  .àpropos h1{
+    font-size: 45px;
+  }
+  .anim_box{
+  flex-basis: 90%;
+  margin-bottom: 30px;
+}
+.textdesc p{
+  font-size: 15px;
+}
+hr{
+  margin: 5px auto;
+}
+.anim_box:hover .textdesc{
+  bottom: 25% !important
+}
+}
+/* Partie footer */
+#footer
+{
+  padding: 100px 0 20px;
+  background: #0c3b37;
+}
+.footer-row{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-left, .footer-right{
+  padding: 10px;
+  flex-basis: 45%;
+  margin-bottom: 20px;
+}
+.footer-right{
+  text-align: right;
+}
+.footer-row h1{
+  margin: 10px 0;
+  color: #fff;
+}
+.footer-row p{
+  line-height: 35px;
+  color: #fff;
+}
+.footer-left .fa, .footer-right .fa{
+  font-size: 20px;
+  margin: 10px;
+}
+.social_media{
+  text-align: center;
+}
+.social_media .fa{
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  color: #fff;
+  transition: .5s;
+}
+.social_media .fa:hover{
+  background: #0c3b37;
+  color: #fff;
+  transform: translateY(-7px);
+}
+.social_media p{
+  margin-top: 20px;
+  font-size: 12px;
+}
+/*--- partie responsive footer --- */
+@media screen and (max-width:1000px){
+  .footer-left, .footer-right {
+    flex-basis: 100%;
+    font-size: 14px;
+  }
+}
